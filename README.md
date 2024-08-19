@@ -17,14 +17,14 @@ Gained confidence in DevOps practices.
 
 This project equipped me with essential skills and experience that will be valuable for real-world DevOps and software development environments.
 
-## Workflow:
+### Workflow
 
-Set up Git and GitHub.
-Build the frontend.
-Create and connect an API.
-Containerize the app with Docker.
-Test locally.
-Automate with Jenkins.
+1. Set up Git and GitHub.
+2. Build the frontend with HTML, CSS, and JavaScript.
+3. Create a Node.js API that returns JSON and connect it with the frontend.
+4. Containerize the application using Docker.
+5. Test locally: access the frontend via `localhost` and the API via `localhost:3000/data`.
+6. Automate the entire process using Jenkins.
 
 ---
 
