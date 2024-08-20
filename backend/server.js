@@ -9,7 +9,7 @@ app.use(cors());
 app.get("/data", (req, res) => {
   res.json({
     message:
-      "Hello from the Backend, created API to connect! I am DaudCloud-sudo running at version 2.0",
+      "Hello from the Backend! I am DaudCloud-sudo running at version 2.0",
   });
 });
 
