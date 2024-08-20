@@ -54,3 +54,63 @@ This project equipped me with essential skills and experience that will be valua
 10. [Conclusion](#conclusion)
 
 ---
+
+## Project Architecture
+
+Image to add.
+
+## Tools and Technologies
+
+For this project, I used the following tools and technologies:
+
+- **Jenkins**: For automating the CI/CD pipeline.
+- **Docker**: For containerizing the application and managing microservices.
+- **Git**: For version control and repository management.
+- **GitHub**: For hosting the source code and Jenkins pipeline.
+- **Node.js**: For the backend microservice.
+- **HTML/CSS/JavaScript**: For the frontend microservice.
+- **Python `unittest`**: For automated testing of the backend microservice.
+
+## Setup and Installation
+
+Follow these steps to set up and install the required tools:
+
+### Installing Jenkins
+
+1. Download Jenkins from the [official Jenkins website](https://www.jenkins.io/download/).
+2. Run the installer and follow the on-screen instructions to complete the installation.
+3. Open Jenkins in your web browser at `http://localhost:8080` and follow the directory to get the password.
+
+![alt text](image-2.png)
+
+### Installing Docker
+
+1. Download Docker Desktop from the [Docker website](https://www.docker.com/products/docker-desktop).
+2. Run the installer and follow the instructions to complete the installation.
+3. After installation, open Docker Desktop and ensure it's running.
+
+![alt text](image-1.png)
+
+### Installing Required Jenkins Plugins
+
+1. Open Jenkins in your web browser.
+2. Go to **Manage Jenkins** > **Manage Plugins**.
+3. In the **Available** tab, search for and install the following plugins:
+   - **Docker Pipeline**
+   - **Git**
+   - **Pipeline**
+4. After installation, restart Jenkins to ensure the plugins are loaded.
+
+![alt text](image.png)
+
+## Automated Testing with Python `unittest`
+
+For automated testing of the backend microservice, I used Python’s `unittest` module. This module provides a framework for writing and running tests, which helps ensure that the backend code functions correctly.
+
+### Basic Example of `unittest` in Python
+
+Here's a basic example of how you might use `unittest` to test the backend microservice:
+
+![alt text](image-3.png)
+
+Code is available in Backend Folder with name `test_backend.py`
