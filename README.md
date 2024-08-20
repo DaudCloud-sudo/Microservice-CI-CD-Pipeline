@@ -81,7 +81,7 @@ Follow these steps to set up and install the required tools:
 2. Run the installer and follow the on-screen instructions to complete the installation.
 3. Open Jenkins in your web browser at `http://localhost:8080` and follow the directory to get the password.
 
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/d72069b7-260f-4b67-a1b6-22a602c675d0)
 
 ### Installing Docker
 
@@ -89,7 +89,7 @@ Follow these steps to set up and install the required tools:
 2. Run the installer and follow the instructions to complete the installation.
 3. After installation, open Docker Desktop and ensure it's running.
 
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/32d1de70-0f5f-4aae-85a9-fac1ced91904)
 
 ### Installing Required Jenkins Plugins
 
@@ -101,7 +101,7 @@ Follow these steps to set up and install the required tools:
    - **Pipeline**
 4. After installation, restart Jenkins to ensure the plugins are loaded.
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/d72efb2a-451e-4bbc-9f48-1787b6aa0ad0)
 
 ## Automated Testing with Python `unittest`
 
@@ -111,6 +111,6 @@ For automated testing of the backend microservice, I used Python’s `unittest` 
 
 Here's a basic example of how you might use `unittest` to test the backend microservice:
 
-![alt text](image-3.png)
+![image](https://github.com/user-attachments/assets/b61c4a8d-f734-4b44-9a52-cb4986fcfe43)
 
 Code is available in Backend Folder with name `test_backend.py`
