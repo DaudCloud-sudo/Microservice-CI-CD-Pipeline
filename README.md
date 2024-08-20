@@ -109,7 +109,7 @@ For automated testing of the backend microservice, I used Python’s `unittest` 
 
 ### Basic Example of `unittest` in Python
 
-Here's a basic example of how you might use `unittest` to test the backend microservice:
+Here's how I used `unittest` to test the backend microservice:
 
 ![image](https://github.com/user-attachments/assets/b61c4a8d-f734-4b44-9a52-cb4986fcfe43)
 
