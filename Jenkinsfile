@@ -36,7 +36,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Python tests for the backend'
-                    sh 'python test_backend.py'
+                    bat 'python test_backend.py'
                 }
             }
         }
