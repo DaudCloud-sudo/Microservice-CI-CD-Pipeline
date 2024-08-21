@@ -4,8 +4,11 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scmGit(branches: [[name: 'main']], 
-                git 'https://github.com/DaudCloud-sudo/Microservice-CI-CD-Pipeline.git'
+                checkout([
+                    $class: 'GitSCM',
+                    branches: [[name: '*/main']],
+                    userRemoteConfigs: [[url: 'https://github.com/DaudCloud-sudo/Microservice-CI-CD-Pipeline.git']]
+                ])
             }
         }
 
