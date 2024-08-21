@@ -32,7 +32,6 @@ pipeline {
             }
         }
 
-        stages {
         stage('Check Python Version') {
             steps {
                 script {
@@ -40,7 +39,6 @@ pipeline {
                 }
             }
         }
-    }
 
         stage('Test Backend') {
             steps {
