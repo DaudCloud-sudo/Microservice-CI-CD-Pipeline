@@ -16,7 +16,7 @@ pipeline {
             steps {
                 dir('frontend') {
                     script {
-                        bat 'docker build -t frontend:latest .'
+                        sh 'docker build -t frontend:latest .'
                     }
                 }
             }
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 dir('backend') {
                     script {
-                        bat 'docker build -t backend:latest .'
+                        sh 'docker build -t backend:latest .'
                     }
                 }
             }
@@ -36,8 +36,8 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying frontend and backend services'
-                    bat 'docker run -d -p 80:80 frontend:latest'
-                    bat 'docker run -d -p 3000:3000 backend:latest'
+                    sh 'docker run -d -p 80:80 frontend:latest'
+                    sh 'docker run -d -p 3000:3000 backend:latest'
                 }
             }
         }
