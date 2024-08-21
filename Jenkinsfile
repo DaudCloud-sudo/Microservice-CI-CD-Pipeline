@@ -32,14 +32,6 @@ pipeline {
             }
         }
 
-        stage('Check Python Version') {
-            steps {
-                script {
-                    bat 'python --version'
-                }
-            }
-        }
-
         stage('Test Backend') {
             steps {
                 script {
