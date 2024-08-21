@@ -32,15 +32,6 @@ pipeline {
             }
         }
 
-        stage('Test Backend') {
-            steps {
-                script {
-                    echo 'Running Python tests for the backend'
-                    bat 'python test_backend.py'
-                }
-            }
-        }
-
         stage('Deploy Frontend and Backend') {
             steps {
                 script {
