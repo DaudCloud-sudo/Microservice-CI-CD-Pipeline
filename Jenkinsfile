@@ -37,7 +37,7 @@ pipeline {
                 dir('backend') {
                     script {
                         echo 'Running backend tests - Python-unittest for backend functionality'
-                        bat 'python3 test_backend.py'
+                        bat 'python test_backend.py'
                     }
                 }
             }
