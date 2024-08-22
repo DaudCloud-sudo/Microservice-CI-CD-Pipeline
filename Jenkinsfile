@@ -32,6 +32,17 @@ pipeline {
             }
         }
 
+        stage('Test Backend') {
+            steps {
+                dir('backend') {
+                    script {
+                        echo 'Running backend tests - Python-unittest for backend functionality'
+                        bat 'python3 test_backend.py'
+                    }
+                }
+            }
+        }
+
         stage('Deploy Frontend and Backend') {
             steps {
                 script {
