@@ -136,15 +136,19 @@ Follow these steps to set up and install the required tools:
 
 - **Jenkins Configuration**
   - Configured Jenkins for continuous integration and deployment.
+  - Triggered the build process with Poll SCM and whenever changes are made to Github Repo.
+    
+    ![image](https://github.com/user-attachments/assets/cb674546-3314-4f3f-a912-86d76054b2f1)
+
   - Set up Jenkins on Docker to automate the build, test, and deployment processes.
- 
-![image](https://github.com/user-attachments/assets/d4e180e1-088c-4eee-b14c-372734670cbb)
+
+![image](https://github.com/user-attachments/assets/96a035e6-7677-4427-8c8b-4f55fc45abdd)
 
 - **Jenkinsfile Automate Process**
   - Created a Jenkinsfile to define the pipeline stages: Checkout, Build, Test, and Deploy.
   - Integrated Jenkins with GitHub to trigger builds on code commits.
  
-![image](https://github.com/user-attachments/assets/2e2df48a-a384-48cb-bd7d-d914449afe63)
+![image](https://github.com/user-attachments/assets/e4ac58d1-e364-4570-91f4-e2ea225d386a)
 
 - **Docker Integration**
   - Dockerized both frontend and backend services for consistent environments across development and testing.
