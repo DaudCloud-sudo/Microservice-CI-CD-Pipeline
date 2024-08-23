@@ -8,12 +8,12 @@ I built a CI/CD pipeline for microservices using Jenkins and Docker, separating 
 
 I successfully:
 
-Initialize the Git and Github Repo
-Created a CI/CD pipeline with Jenkins.
-Dockerized microservices for deployment.
-Linked GitHub with Jenkins for automation.
-Developed a basic understanding of creating APIs and connecting them with the frontend.
-Gained confidence in DevOps practices.
+- Initialized the Git and GitHub repo.
+- Created a CI/CD pipeline with Jenkins.
+- Dockerized microservices for deployment.
+- Linked GitHub with Jenkins for automation.
+- Developed a basic understanding of creating APIs and connecting them with the frontend.
+- Gained confidence in DevOps practices.
 
 This project equipped me with essential skills and experience that will be valuable for real-world DevOps and software development environments.
 
@@ -37,9 +37,10 @@ This project equipped me with essential skills and experience that will be valua
    - Installing Docker
    - Installing Required Jenkins Plugins
 4. [Microservices Structure](#microservices-structure)
-   - Initialize the Git and GitHub Repo
+   - Initializing the Git and GitHub Repo
    - Frontend Service (HTML, CSS, JavaScript)
    - Backend Service (Node.js)
+   - Finalizing and Pushing Changes to GitHub
 5. [CI/CD Pipeline Implementation](#ci-cd-pipeline-implementation)
    - Jenkins Configuration
    - Jenkinsfile Explained
@@ -78,7 +79,7 @@ Follow these steps to set up and install the required tools:
 
 1. Download Jenkins from the [official Jenkins website](https://www.jenkins.io/download/).
 2. Run the installer and follow the on-screen instructions to complete the installation.
-3. Open Jenkins in your web browser at `http://localhost:8080` and follow the directory to get the password.
+3. Open Jenkins in your web browser at `http://localhost:8080` and follow the prompts to retrieve the initial admin password.
 
 ![image](https://github.com/user-attachments/assets/d72069b7-260f-4b67-a1b6-22a602c675d0)
 
@@ -100,11 +101,13 @@ Follow these steps to set up and install the required tools:
    - **Pipeline**
 4. After installation, restart Jenkins to ensure the plugins are loaded.
 
+![image](https://github.com/user-attachments/assets/d72efb2a-451e-4bbc-9f48-1787b6aa0ad0)
+
 ## 4. Microservices Structure
 
-- **Initialize the Git and GitHub**
-  - Went to GitHub and created a new repository (e.g., microservice-cicd).
-  - Initialized it with a README.md file.
+- **Initializing the Git and GitHub Repo**
+  - Went to GitHub and created a new repository (e.g., `microservice-cicd`).
+  - Initialized it with a `README.md` file.
   - Cloned it to the local machine using Git.
 
 ![image](https://github.com/user-attachments/assets/bd683bd4-a0a5-4a0e-bb05-b27b754a59a6)
@@ -122,22 +125,25 @@ Follow these steps to set up and install the required tools:
 ![image](https://github.com/user-attachments/assets/e0fe9b76-3bcd-427e-8e40-96472e41fa02)
 ![image](https://github.com/user-attachments/assets/36ae324d-99c3-445c-b888-5a6eae8c5d1e)
 
--
+- **Finalizing and Pushing Changes to GitHub**
+  - Committed the final changes to the local Git repository with a descriptive message.
+  - Pushed the committed changes to the GitHub repository, ensuring the latest updates are reflected.
+  - Updated the README file with the final project details, including steps, screenshots, and outcomes.
+
+![image](https://github.com/user-attachments/assets/0ff6c5b8-67d1-40d2-94dd-c803b2244307)
 
 ## 5. CI/CD Pipeline Implementation
 
 - **Jenkins Configuration**
-
   - Configured Jenkins for continuous integration and deployment.
   - Set up Jenkins on Docker to automate the build, test, and deployment processes.
 
 - **Jenkinsfile Explained**
-
   - Created a Jenkinsfile to define the pipeline stages: Checkout, Build, Test, and Deploy.
   - Integrated Jenkins with GitHub to trigger builds on code commits.
 
 - **Docker Integration**
-  - Dockerized both frontend and backend services for consistent environments across development, and testing.
+  - Dockerized both frontend and backend services for consistent environments across development and testing.
   - Used Docker Compose to manage multi-container applications.
 
 ![CI/CD Pipeline Implementation](path/to/cicd-pipeline-screenshot.png)
@@ -152,33 +158,59 @@ Here's how I used `unittest` to test the backend microservice:
 
 ![image](https://github.com/user-attachments/assets/b61c4a8d-f734-4b44-9a52-cb4986fcfe43)
 
-Code is available in Backend Folder with name `test_backend.py`
+Code is available in the Backend folder with the name `test_backend.py`.
 
 - **Testing in Docker Containers**
-  - Ran tests within Docker containers to validate the functionality in isolated environments.
+  - Ran tests within Docker containers to validate functionality in isolated environments.
   - Automated the testing process as part of the Jenkins CI/CD pipeline.
 
 ![Testing and Validation](path/to/testing-validation-screenshot.png)
 
-## 7. [Deployment](#deployment)
 
-- **Dockerized Microservices on Windows**
+## 7. Deployment
 
-  - Deployed Dockerized microservices on a Windows environment.
-  - Configured Docker to manage containers for both frontend and backend services.
+### Dockerized Microservices on Windows - Manual Deployment of Docker container
 
-- **Running the Pipeline in Jenkins**
-  - Successfully executed the CI/CD pipeline in Jenkins.
-  - Deployed updates automatically to the Dockerized environment upon code changes.
+1. **Build Docker Images**:
+    - Created Docker images for the frontend and backend using the Dockerfile in their respective directories.
+    ```bash
+    cd frontend
+    docker build -t frontend:latest .
+    ```
+    ```bash
+    cd ../backend
+    docker build -t backend:latest .
+    ```
 
-![Deployment](path/to/deployment-screenshot.png)
+2. **Run Docker Containers**:
+    - Launched the frontend and backend containers in detached mode, mapping appropriate ports to the host.
+    ```bash
+    docker run -d -p 80:80 frontend:latest
+    ```
+    ```bash
+    docker run -d -p 3000:3000 backend:latest
+    ```
 
-## 8. [Project Outcome](#project-outcome)
+3. **Verify Running Containers**:
+    - Verified that both containers were running by listing active containers.
+    ```bash
+    docker ps
+    ```
+
+4. **Access Applications**:
+    - **Frontend**: Accessed via `http://localhost`.
+    - **Backend**: Accessed via `http://localhost:3000/data`.
+
+5. **Running the Pipeline in Jenkins - Automated Build and Deploy**
+   - Executed the CI/CD pipeline in Jenkins.
+   - Deployed updates automatically to the Dockerized environment upon code changes.
+
+## 8. Project Outcome
 
 - Achieved a fully automated CI/CD pipeline that builds, tests, and deploys microservices.
 - Deployed a robust microservices architecture using Docker and Jenkins.
-- Validated the system through automated testing, ensuring reliable and consistent deployments.
+- Gained practical experience in Git, GitHub, Jenkins, Docker, and microservices architecture.
 
-![Project Outcome](path/to/project-outcome-screenshot.png)
+## Conclusion
 
-![image](https://github.com/user-attachments/assets/d72efb2a-451e-4bbc-9f48-1787b6aa0ad0)
+This project provided a comprehensive understanding of DevOps practices, microservices, Docker, and Jenkins. I learned to automate the build, test, and deployment processes effectively, preparing me for real-world software development and DevOps roles.
