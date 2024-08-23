@@ -15,5 +15,5 @@ app.get("/data", (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Backend is running at http://localhost:${PORT}`);
-  console.log("Successful");
+  console.log("Success");
 });

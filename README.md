@@ -4,7 +4,7 @@
 
 I built a CI/CD pipeline for microservices using Jenkins and Docker, separating the app into frontend and backend services. This project helped me improve my skills in Git, GitHub, Jenkins, and Docker by integrating continuous testing, versioning, and deployment.
 
-## Project Outcome
+## Outcome
 
 I successfully:
 
@@ -37,6 +37,7 @@ This project equipped me with essential skills and experience that will be valua
    - Installing Docker
    - Installing Required Jenkins Plugins
 4. [Microservices Structure](#microservices-structure)
+   - Initialize the Git and GitHub Repo
    - Frontend Service (HTML, CSS, JavaScript)
    - Backend Service (Node.js)
 5. [CI/CD Pipeline Implementation](#ci-cd-pipeline-implementation)
@@ -53,11 +54,11 @@ This project equipped me with essential skills and experience that will be valua
 
 ---
 
-## Project Architecture
+## 1. Project Architecture
 
 Image to add.
 
-## Tools and Technologies
+## 2. Tools and Technologies
 
 For this project, I used the following tools and technologies:
 
@@ -69,7 +70,7 @@ For this project, I used the following tools and technologies:
 - **HTML/CSS/JavaScript**: For the frontend microservice.
 - **Python `unittest`**: For automated testing of the backend microservice.
 
-## Setup and Installation
+## 3. Setup and Installation
 
 Follow these steps to set up and install the required tools:
 
@@ -99,16 +100,85 @@ Follow these steps to set up and install the required tools:
    - **Pipeline**
 4. After installation, restart Jenkins to ensure the plugins are loaded.
 
-![image](https://github.com/user-attachments/assets/d72efb2a-451e-4bbc-9f48-1787b6aa0ad0)
+## 4. Microservices Structure
 
-## Automated Testing with Python `unittest`
+- **Initialize the Git and GitHub**
+  - Went to GitHub and created a new repository (e.g., microservice-cicd).
+  - Initialized it with a README.md file.
+  - Cloned it to the local machine using Git.
+
+![image](https://github.com/user-attachments/assets/bd683bd4-a0a5-4a0e-bb05-b27b754a59a6)
+
+- **Frontend Service (HTML, CSS, JavaScript)**
+  - Developed a responsive frontend using HTML, CSS, and JavaScript.
+  - The frontend connects to the backend service through RESTful APIs.
+
+![image](https://github.com/user-attachments/assets/8e435aca-c8da-49b4-9747-fa03b85e1bce)
+
+- **Backend Service (Node.js)**
+  - Built a backend service using Node.js and Express to handle API requests.
+  - The backend processes data and communicates with the frontend.
+
+![image](https://github.com/user-attachments/assets/e0fe9b76-3bcd-427e-8e40-96472e41fa02)
+![image](https://github.com/user-attachments/assets/36ae324d-99c3-445c-b888-5a6eae8c5d1e)
+
+-
+
+## 5. CI/CD Pipeline Implementation
+
+- **Jenkins Configuration**
+
+  - Configured Jenkins for continuous integration and deployment.
+  - Set up Jenkins on Docker to automate the build, test, and deployment processes.
+
+- **Jenkinsfile Explained**
+
+  - Created a Jenkinsfile to define the pipeline stages: Checkout, Build, Test, and Deploy.
+  - Integrated Jenkins with GitHub to trigger builds on code commits.
+
+- **Docker Integration**
+  - Dockerized both frontend and backend services for consistent environments across development, and testing.
+  - Used Docker Compose to manage multi-container applications.
+
+![CI/CD Pipeline Implementation](path/to/cicd-pipeline-screenshot.png)
+
+## 6. Testing and Validation
 
 For automated testing of the backend microservice, I used Python’s `unittest` module. This module provides a framework for writing and running tests, which helps ensure that the backend code functions correctly.
 
-### Basic Example of `unittest` in Python
+- **Basic Example of `unittest` in Python**
 
 Here's how I used `unittest` to test the backend microservice:
 
 ![image](https://github.com/user-attachments/assets/b61c4a8d-f734-4b44-9a52-cb4986fcfe43)
 
 Code is available in Backend Folder with name `test_backend.py`
+
+- **Testing in Docker Containers**
+  - Ran tests within Docker containers to validate the functionality in isolated environments.
+  - Automated the testing process as part of the Jenkins CI/CD pipeline.
+
+![Testing and Validation](path/to/testing-validation-screenshot.png)
+
+## 7. [Deployment](#deployment)
+
+- **Dockerized Microservices on Windows**
+
+  - Deployed Dockerized microservices on a Windows environment.
+  - Configured Docker to manage containers for both frontend and backend services.
+
+- **Running the Pipeline in Jenkins**
+  - Successfully executed the CI/CD pipeline in Jenkins.
+  - Deployed updates automatically to the Dockerized environment upon code changes.
+
+![Deployment](path/to/deployment-screenshot.png)
+
+## 8. [Project Outcome](#project-outcome)
+
+- Achieved a fully automated CI/CD pipeline that builds, tests, and deploys microservices.
+- Deployed a robust microservices architecture using Docker and Jenkins.
+- Validated the system through automated testing, ensuring reliable and consistent deployments.
+
+![Project Outcome](path/to/project-outcome-screenshot.png)
+
+![image](https://github.com/user-attachments/assets/d72efb2a-451e-4bbc-9f48-1787b6aa0ad0)

@@ -4,5 +4,5 @@ document.getElementById("fetchDataBtn").addEventListener("click", () => {
     .then((data) => {
       document.getElementById("data").innerText = `Received: ${data.message}`;
     })
-    .catch((error) => console.log("Error fetching data:", error));
+    .catch((error) => console.log("Error fetching data from API:", error));
 });
