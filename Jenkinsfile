@@ -43,7 +43,7 @@ pipeline {
             }
         }
 
-        stage('Deploy Frontend and Backend') {
+        stage('Deploy Microservices') {
             steps {
                 script {
                     echo 'Deploying frontend and backend services'
