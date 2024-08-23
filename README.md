@@ -166,12 +166,6 @@ Here's how I used `unittest` to test the backend microservice:
 
 Code is available in the Backend folder with the name `test_backend.py`.
 
-- **Testing in Docker Containers**
-  - Ran tests within Docker containers to validate functionality in isolated environments.
-  - Automated the testing process as part of the Jenkins CI/CD pipeline.
-
-![Testing and Validation](path/to/testing-validation-screenshot.png)
-
 ## 7. Deployment
 
 ### Dockerized Microservices on Windows - Manual Deployment of Docker container
