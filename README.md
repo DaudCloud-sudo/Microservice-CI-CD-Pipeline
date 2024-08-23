@@ -210,6 +210,8 @@ Code is available in the Backend folder with the name `test_backend.py`.
    - Executed the CI/CD pipeline in Jenkins.
    - Deployed updates automatically to the Dockerized environment upon code changes.
 
+![image](https://github.com/user-attachments/assets/104633e9-53f0-4c61-8454-6bfc9c21f78a)
+
 ## 8. Project Outcome
 
 - Achieved a fully automated CI/CD pipeline that builds, tests, and deploys microservices.
