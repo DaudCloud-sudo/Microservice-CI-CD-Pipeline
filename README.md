@@ -40,6 +40,7 @@ This project equipped me with essential skills and experience that will be valua
    - Initialize the Git and GitHub Repo
    - Frontend Service (HTML, CSS, JavaScript)
    - Backend Service (Node.js)
+   - Finalizing and Pushing Changes to GitHub
 5. [CI/CD Pipeline Implementation](#ci-cd-pipeline-implementation)
    - Jenkins Configuration
    - Jenkinsfile Explained
@@ -99,6 +100,8 @@ Follow these steps to set up and install the required tools:
    - **Git**
    - **Pipeline**
 4. After installation, restart Jenkins to ensure the plugins are loaded.
+
+![image](https://github.com/user-attachments/assets/d72efb2a-451e-4bbc-9f48-1787b6aa0ad0)
 
 ## 4. Microservices Structure
 
@@ -168,9 +171,40 @@ Code is available in Backend Folder with name `test_backend.py`
 ## 7. [Deployment](#deployment)
 
 - **Dockerized Microservices on Windows**
+  - Build Docker Images
+      - Created the Docker image for the frontend and backend using the Dockerfile in the `frontend` and `backend` directory.
+        ```bash
+        cd frontend
+        docker build -t frontend:latest .
+        ```
+        ```bash
+        cd ../backend
+        docker build -t backend:latest .
+        ```
+        
+ - Run Docker Containers
+      - Launched the frontend container in detached mode, mapping port 80 of the container to port 80 on the host.
+      - Launched the backend container in detached mode, mapping port 3000 of the container to port 3000 on the host.
+        ```bash
+        docker run -d -p 80:80 frontend:latest
+        ```
+        ```bash
+        docker run -d -p 3000:3000 backend:latest
+        ```
 
-  - Deployed Dockerized microservices on a Windows environment.
-  - Configured Docker to manage containers for both frontend and backend services.
+   - Verify running containers
+      - Verified that both frontend and backend containers were running by listing active containers.
+      ```bash
+      docker ps
+      ```
+
+ - Access Applications
+      - **Frontend**: Opened a browser and navigated to `http://localhost` to view the frontend microservice.
+      - **Backend**: Navigated to `http://localhost:3000/data` to view the backend microservice's JSON response.
+
+    - Commit and Push Dockerfiles
+      Committed and pushed Dockerfiles to the repository for version control.
+
 
 - **Running the Pipeline in Jenkins**
   - Successfully executed the CI/CD pipeline in Jenkins.
@@ -183,7 +217,3 @@ Code is available in Backend Folder with name `test_backend.py`
 - Achieved a fully automated CI/CD pipeline that builds, tests, and deploys microservices.
 - Deployed a robust microservices architecture using Docker and Jenkins.
 - Validated the system through automated testing, ensuring reliable and consistent deployments.
-
-![Project Outcome](path/to/project-outcome-screenshot.png)
-
-![image](https://github.com/user-attachments/assets/d72efb2a-451e-4bbc-9f48-1787b6aa0ad0)
