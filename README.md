@@ -57,7 +57,7 @@ This project equipped me with essential skills and experience that will be valua
 
 ## 1. Project Architecture
 
-Image to add.
+![image](https://github.com/user-attachments/assets/52495985-b2d5-496c-a4ba-732f1ac83f51)
 
 ## 2. Tools and Technologies
 
