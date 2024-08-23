@@ -52,6 +52,7 @@ This project equipped me with essential skills and experience that will be valua
    - Dockerized Microservices on Windows
    - Running the Pipeline in Jenkins
 8. [Project Outcome](#project-outcome)
+9. [Problems and Solution](#problem-solutions)
 
 ---
 
@@ -217,7 +218,7 @@ Code is available in the Backend folder with the name `test_backend.py`.
 - Deployed a robust microservices architecture using Docker and Jenkins.
 - Gained practical experience in Git, GitHub, Jenkins, Docker, and microservices architecture.
 
-## Problems and Solutions
+## 9. Problems and Solutions
 
 ### Docker Container Issues:
 
@@ -229,40 +230,20 @@ Solution: Reviewed logs, fixed Dockerfile configurations, resolved port conflict
 Problem: Build failures.
 Solution: Corrected Jenkinsfile syntax, installed necessary dependencies, and updated Jenkins plugins.
 
-### Inconsistent API Responses:
-
-Problem: Frontend received incorrect data.
-Solution: Verified API endpoints, configured CORS, and improved error handling.
-
 ### Jenkins Not Pulling Latest Code:
 
 Problem: Deploying outdated code.
 Solution: Checked repository URL and branch settings.
 
-### Frontend Not Reflecting Changes:
-
-Problem: Changes not visible.
-Solution: Cleared Docker and browser cache.
 ### Testing Failures in Jenkins:
 
 Problem: Tests failed.
 Solution: Ensured test framework and scripts were correctly configured.
-
-### Security Vulnerabilities in Docker Images:
-
-Problem: Outdated dependencies.
-Solution: Updated base images and used vulnerability scanning tools.
 
 ### Misconfigured Jenkins Agents:
 
 Problem: Agent configuration issues.
 Solution: Reconfigured agents and reviewed logs.
 
-### Frontend-Backend Communication Issues:
-
-Problem: Containers couldn’t communicate.
-Solution: Configured Docker networking and corrected API endpoint URLs.
-
-## Conclusion
-
+These were some of the main issues I encountered. I utilized resources such as Stack Overflow, YouTube, and Google to resolve these errors and misconfigurations. Apart from that,
 This project provided a comprehensive understanding of DevOps practices, microservices, Docker, and Jenkins. I learned to automate the build, test, and deployment processes effectively, preparing me for real-world software development and DevOps roles.
