@@ -166,11 +166,13 @@ Code is available in the Backend folder with the name `test_backend.py`.
 
 ![Testing and Validation](path/to/testing-validation-screenshot.png)
 
+
 ## 7. Deployment
 
-- **Dockerized Microservices on Windows - Manual Test of Docker container**
-  - Build Docker Images:
-    - Created the Docker image for the frontend and backend using the Dockerfile in the `frontend` and `backend` directory.
+### Dockerized Microservices on Windows - Manual Deployment of Docker container
+
+1. **Build Docker Images**:
+    - Created Docker images for the frontend and backend using the Dockerfile in their respective directories.
     ```bash
     cd frontend
     docker build -t frontend:latest .
@@ -179,10 +181,9 @@ Code is available in the Backend folder with the name `test_backend.py`.
     cd ../backend
     docker build -t backend:latest .
     ```
-    
- - **Run Docker Containers**:
-    - Launched the frontend container in detached mode, mapping port 80 of the container to port 80 on the host.
-    - Launched the backend container in detached mode, mapping port 3000 of the container to port 3000 on the host.
+
+2. **Run Docker Containers**:
+    - Launched the frontend and backend containers in detached mode, mapping appropriate ports to the host.
     ```bash
     docker run -d -p 80:80 frontend:latest
     ```
@@ -190,24 +191,19 @@ Code is available in the Backend folder with the name `test_backend.py`.
     docker run -d -p 3000:3000 backend:latest
     ```
 
-   - **Verify Running Containers**:
-    - Verified that both frontend and backend containers were running by listing active containers.
+3. **Verify Running Containers**:
+    - Verified that both containers were running by listing active containers.
     ```bash
     docker ps
     ```
 
- - **Access Applications**:
-    - **Frontend**: Opened a browser and navigated to `http://localhost` to view the frontend microservice.
-    - **Backend**: Navigated to `http://localhost:3000/data` to view the backend microservice's JSON response.
+4. **Access Applications**:
+    - **Frontend**: Accessed via `http://localhost`.
+    - **Backend**: Accessed via `http://localhost:3000/data`.
 
- - **Commit and Push Dockerfiles**:
-    - Committed and pushed Dockerfiles to the repository for version control.
-
-- **Running the Pipeline in Jenkins - Automated Test to Build and Deploy**
-  - Successfully executed the CI/CD pipeline in Jenkins.
-  - Deployed updates automatically to the Dockerized environment upon code changes.
-
-![Deployment](path/to/deployment-screenshot.png)
+5. **Running the Pipeline in Jenkins - Automated Build and Deploy**
+   - Executed the CI/CD pipeline in Jenkins.
+   - Deployed updates automatically to the Dockerized environment upon code changes.
 
 ## 8. Project Outcome
 
@@ -215,9 +211,6 @@ Code is available in the Backend folder with the name `test_backend.py`.
 - Deployed a robust microservices architecture using Docker and Jenkins.
 - Gained practical experience in Git, GitHub, Jenkins, Docker, and microservices architecture.
 
-![Project Outcome](path/to/project-outcome-screenshot.png)
-
 ## Conclusion
 
-This project gave me a comprehensive understanding of DevOps practices, microservices, Docker, and Jenkins. I learned to automate the build, test, and deployment processes effectively, preparing me for real-world software development and DevOps roles.
-
+This project provided a comprehensive understanding of DevOps practices, microservices, Docker, and Jenkins. I learned to automate the build, test, and deployment processes effectively, preparing me for real-world software development and DevOps roles.
