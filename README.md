@@ -122,7 +122,12 @@ Follow these steps to set up and install the required tools:
 ![image](https://github.com/user-attachments/assets/e0fe9b76-3bcd-427e-8e40-96472e41fa02)
 ![image](https://github.com/user-attachments/assets/36ae324d-99c3-445c-b888-5a6eae8c5d1e)
 
--
+- **Finalizing and Pushing Changes to GitHub**
+  - Committed the final changes to the local Git repository with a descriptive message.
+  - Pushed the committed changes to the GitHub repository, ensuring the latest updates are reflected.
+  - Updated the README file with the final project details, including steps, screenshots, and outcomes.
+
+![image](https://github.com/user-attachments/assets/0ff6c5b8-67d1-40d2-94dd-c803b2244307)
 
 ## 5. CI/CD Pipeline Implementation
 
