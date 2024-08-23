@@ -50,8 +50,6 @@ This project equipped me with essential skills and experience that will be valua
    - Dockerized Microservices on Windows
    - Running the Pipeline in Jenkins
 8. [Project Outcome](#project-outcome)
-9. [Future Improvements](#future-improvements)
-10. [Conclusion](#conclusion)
 
 ---
 
