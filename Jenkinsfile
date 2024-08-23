@@ -46,9 +46,21 @@ pipeline {
         stage('Deploy Microservices') {
             steps {
                 script {
+                    echo 'Stopping and removing existing containers with labels'
+
+            // Stop and remove containers with label 'frontend-service'
+                    bat '''
+                        docker ps -q -f "label=frontend-service" | ForEach-Object { docker stop $_; docker rm $_ }
+                        '''
+            
+            // Stop and remove containers with label 'backend-service'
+                    bat '''
+                        docker ps -q -f "label=backend-service" | ForEach-Object { docker stop $_; docker rm $_ }
+                    '''
+                    
                     echo 'Deploying frontend and backend services'
-                    bat 'docker run -d -p 80:80 frontend:latest'
-                    bat 'docker run -d -p 3000:3000 backend:latest'
+                    bat 'docker run -d --label frontend-service -p 80:80 frontend:latest'
+                    bat 'docker run -d --label backend-service -p 3000:3000 backend:latest'
                 }
             }
         }
