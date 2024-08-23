@@ -223,28 +223,28 @@ Code is available in the Backend folder with the name `test_backend.py`.
 
 ### Docker Container Issues:
 
-Problem: Containers failed to start.
-Solution: Reviewed logs, fixed Dockerfile configurations, resolved port conflicts, and adjusted network settings.
+**Problem:** Containers failed to start.
+**Solution:** Reviewed logs, fixed Dockerfile configurations, resolved port conflicts, and adjusted network settings.
 
 ### Jenkins Pipeline Failures:
 
-Problem: Build failures.
-Solution: Corrected Jenkinsfile syntax, installed necessary dependencies, and updated Jenkins plugins.
+**Problem:** Build failures.
+**Solution:** Corrected Jenkinsfile syntax, installed necessary dependencies, and updated Jenkins plugins.
 
 ### Jenkins Not Pulling Latest Code:
 
-Problem: Deploying outdated code.
-Solution: Checked repository URL and branch settings.
+**Problem:** Deploying outdated code.
+**Solution:** Checked repository URL and branch settings.
 
 ### Testing Failures in Jenkins:
 
-Problem: Tests failed.
-Solution: Ensured test framework and scripts were correctly configured.
+**Problem:** Tests failed.
+**Solution:** Ensured test framework and scripts were correctly configured.
 
 ### Misconfigured Jenkins Agents:
 
-Problem: Agent configuration issues.
-Solution: Reconfigured agents and reviewed logs.
+**Problem:** Agent configuration issues.
+**Solution:** Reconfigured agents and reviewed logs.
 
 These were some of the main issues I encountered. I utilized resources such as Stack Overflow, YouTube, and Google to resolve these errors and misconfigurations. Apart from that,
 This project provided a comprehensive understanding of DevOps practices, microservices, Docker, and Jenkins. I learned to automate the build, test, and deployment processes effectively, preparing me for real-world software development and DevOps roles.
