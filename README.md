@@ -59,6 +59,10 @@ This project equipped me with essential skills and experience that will be valua
 
 ![image](https://github.com/user-attachments/assets/52495985-b2d5-496c-a4ba-732f1ac83f51)
 
+** CI-CD Pipeline:
+
+![image](https://github.com/user-attachments/assets/a1a7711d-de4d-4b4e-a4b5-fa1cfe439a55)
+
 ## 2. Tools and Technologies
 
 For this project, I used the following tools and technologies:
