@@ -44,41 +44,13 @@ pipeline {
         }
 
         stage('Deploy Microservices') {
-    steps {
-        script {
-            echo 'Stopping and removing existing containers'
-
-            // Stop and remove frontend container
-            bat '''
-                echo Stopping and removing frontend container
-                FOR /F "tokens=*" %%i IN ('docker ps -q -f "ancestor=frontend:latest" 2^>^&1') DO (
-                    echo Stopping container %%i
-                    docker stop %%i 2>&1
-                    echo Removing container %%i
-                    docker rm %%i 2>&1
-                )
-            '''
-            
-            // Stop and remove backend container
-            bat '''
-                echo Stopping and removing backend container
-                FOR /F "tokens=*" %%i IN ('docker ps -q -f "ancestor=backend:latest" 2^>^&1') DO (
-                    echo Stopping container %%i
-                    docker stop %%i 2>&1
-                    echo Removing container %%i
-                    docker rm %%i 2>&1
-                )
-            '''
-
-            echo 'Deploying frontend and backend services'
-
-            // Deploy new frontend container
-            bat 'docker run -d --name frontend-container -p 80:80 frontend:latest 2>&1'
-            
-            // Deploy new backend container
-            bat 'docker run -d --name backend-container -p 3000:3000 backend:latest 2>&1'
+            steps {
+                script {
+                    echo 'Deploying frontend and backend services'
+                    bat 'docker run -d -p 80:80 frontend:latest'
+                    bat 'docker run -d -p 3000:3000 backend:latest'
+                }
+            }
         }
-    }
-}
     }
 }
