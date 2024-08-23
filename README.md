@@ -197,10 +197,11 @@ Code is available in the Backend folder with the name `test_backend.py`.
     ```
 
 3. **Verify Running Containers**:
-    - Verified that both containers were running by listing active containers.
+    - Verified that both containers were running by listing active containers and using dockers desktop.
     ```bash
     docker ps
     ```
+![image](https://github.com/user-attachments/assets/5c1769cc-55fa-4528-b8e6-fc5b81ec744a)
 
 4. **Access Applications**:
     - **Frontend**: Accessed via `http://localhost`.
