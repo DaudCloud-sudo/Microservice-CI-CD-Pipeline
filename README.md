@@ -93,6 +93,7 @@ Follow these steps to set up and install the required tools:
 1. Download Docker Desktop from the [Docker website](https://www.docker.com/products/docker-desktop).
 2. Run the installer and follow the instructions to complete the installation.
 3. After installation, open Docker Desktop and ensure it's running.
+4. At the end of this document, I have outlined the problems encountered and their possible solutions.
 
 ![image](https://github.com/user-attachments/assets/32d1de70-0f5f-4aae-85a9-fac1ced91904)
 
@@ -158,7 +159,7 @@ Follow these steps to set up and install the required tools:
 - **Docker Integration**
   - Dockerized both frontend and backend services for consistent environments across development and testing.
   - Used Docker Compose to manage multi-container applications.
-
+**The encountered problems and their potential solutions are discussed in the end.**
 ## 6. Testing and Validation
 
 For automated testing of the backend microservice, I used Python’s `unittest` module. This module provides a framework for writing and running tests, which helps ensure that the backend code functions correctly.
