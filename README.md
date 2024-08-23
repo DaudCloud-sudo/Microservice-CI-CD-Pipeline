@@ -43,7 +43,7 @@ This project equipped me with essential skills and experience that will be valua
    - Finalizing and Pushing Changes to GitHub
 5. [CI/CD Pipeline Implementation](#ci-cd-pipeline-implementation)
    - Jenkins Configuration
-   - Jenkinsfile Explained
+   - Jenkinsfile Automate Process
    - Docker Integration
 6. [Testing and Validation](#testing-and-validation)
    - Automated Testing with Jest (Backend)
@@ -137,8 +137,10 @@ Follow these steps to set up and install the required tools:
 - **Jenkins Configuration**
   - Configured Jenkins for continuous integration and deployment.
   - Set up Jenkins on Docker to automate the build, test, and deployment processes.
+ 
+![image](https://github.com/user-attachments/assets/d4e180e1-088c-4eee-b14c-372734670cbb)
 
-- **Jenkinsfile Explained**
+- **Jenkinsfile Automate Process**
   - Created a Jenkinsfile to define the pipeline stages: Checkout, Build, Test, and Deploy.
   - Integrated Jenkins with GitHub to trigger builds on code commits.
  
@@ -147,8 +149,6 @@ Follow these steps to set up and install the required tools:
 - **Docker Integration**
   - Dockerized both frontend and backend services for consistent environments across development and testing.
   - Used Docker Compose to manage multi-container applications.
-
-![CI/CD Pipeline Implementation](path/to/cicd-pipeline-screenshot.png)
 
 ## 6. Testing and Validation
 
@@ -167,7 +167,6 @@ Code is available in the Backend folder with the name `test_backend.py`.
   - Automated the testing process as part of the Jenkins CI/CD pipeline.
 
 ![Testing and Validation](path/to/testing-validation-screenshot.png)
-
 
 ## 7. Deployment
 
@@ -212,6 +211,52 @@ Code is available in the Backend folder with the name `test_backend.py`.
 - Achieved a fully automated CI/CD pipeline that builds, tests, and deploys microservices.
 - Deployed a robust microservices architecture using Docker and Jenkins.
 - Gained practical experience in Git, GitHub, Jenkins, Docker, and microservices architecture.
+
+## Problems and Solutions
+
+### Docker Container Issues:
+
+Problem: Containers failed to start.
+Solution: Reviewed logs, fixed Dockerfile configurations, resolved port conflicts, and adjusted network settings.
+
+### Jenkins Pipeline Failures:
+
+Problem: Build failures.
+Solution: Corrected Jenkinsfile syntax, installed necessary dependencies, and updated Jenkins plugins.
+
+### Inconsistent API Responses:
+
+Problem: Frontend received incorrect data.
+Solution: Verified API endpoints, configured CORS, and improved error handling.
+
+### Jenkins Not Pulling Latest Code:
+
+Problem: Deploying outdated code.
+Solution: Checked repository URL and branch settings.
+
+### Frontend Not Reflecting Changes:
+
+Problem: Changes not visible.
+Solution: Cleared Docker and browser cache.
+### Testing Failures in Jenkins:
+
+Problem: Tests failed.
+Solution: Ensured test framework and scripts were correctly configured.
+
+### Security Vulnerabilities in Docker Images:
+
+Problem: Outdated dependencies.
+Solution: Updated base images and used vulnerability scanning tools.
+
+### Misconfigured Jenkins Agents:
+
+Problem: Agent configuration issues.
+Solution: Reconfigured agents and reviewed logs.
+
+### Frontend-Backend Communication Issues:
+
+Problem: Containers couldn’t communicate.
+Solution: Configured Docker networking and corrected API endpoint URLs.
 
 ## Conclusion
 
