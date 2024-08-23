@@ -141,6 +141,8 @@ Follow these steps to set up and install the required tools:
 - **Jenkinsfile Explained**
   - Created a Jenkinsfile to define the pipeline stages: Checkout, Build, Test, and Deploy.
   - Integrated Jenkins with GitHub to trigger builds on code commits.
+ 
+![image](https://github.com/user-attachments/assets/2e2df48a-a384-48cb-bd7d-d914449afe63)
 
 - **Docker Integration**
   - Dockerized both frontend and backend services for consistent environments across development and testing.
