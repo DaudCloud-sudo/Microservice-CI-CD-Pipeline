@@ -58,7 +58,7 @@ This project equipped me with essential skills and experience that will be valua
 
 ## 1. Project Architecture
 
-![image](https://github.com/user-attachments/assets/52495985-b2d5-496c-a4ba-732f1ac83f51)
+![Screenshot 2024-08-24 185027](https://github.com/user-attachments/assets/79e010c4-070d-466d-af35-765078c1b7b3)
 
 **CI-CD Pipeline**
 
