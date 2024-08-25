@@ -58,11 +58,17 @@ This project equipped me with essential skills and experience that will be valua
 
 ## 1. Project Architecture
 
+**Architecture Diagram**
+
 ![Screenshot 2024-08-24 185027](https://github.com/user-attachments/assets/79e010c4-070d-466d-af35-765078c1b7b3)
 
 **CI-CD Pipeline**
 
 ![image](https://github.com/user-attachments/assets/a1a7711d-de4d-4b4e-a4b5-fa1cfe439a55)
+
+**Deployment on Docker**
+
+![Screenshot 2024-08-23 191148](https://github.com/user-attachments/assets/109d76c0-a33f-4253-89e2-51639c9e0d27)
 
 ## 2. Tools and Technologies
 
